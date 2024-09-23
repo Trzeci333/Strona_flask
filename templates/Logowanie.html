@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Logowanie do Panelu</title>
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/panel.css') }}">
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+<body>
+    <div class="wrapper">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" placeholder="Nazwa użytkownika" required>
+                <i class='bx bxs-user' ></i>
+            </div>
+            <div class="input-box">
+                <input type="password" name="password" 
+                placeholder="Hasło" required>
+                <i class='bx bxs-lock'></i>   
+    </div>
+        <div class="remember-forgot">
+            <label><input type="checkbox">Pamiętaj mnie</label>
+            <a href="#">Zapomniałeś hasła ?</a>
+        </div>
+        <button type="submit" class="button">Logowanie</button>
+        <div class="Rejestracja-link">
+        <p>Nie Masz konta ?
+        <a href="#">Zarejestruj</a></p>
+       </div>
+       </form> 
+</body>
+</html>

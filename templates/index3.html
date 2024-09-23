@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title Social Media></title>
+<link
+rel="stylesheet" href="{{ url_for('static', filename='css/kontakt.css') }}" />
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+</head>
+<body>
+    <div class="menu">
+        <div class="menu-toggle">
+            <i class="fas fa-plus"></i>
+        </div>
+        <li style="--i:0; --clr: #1E90FF ">
+            <a href="#"><i class="fab fa-steam"></i></a>
+        </li>
+        <li style="--i:1; --clr: #7289DA">
+            <a href="#"><i class="fab fa-discord"></i></a>
+        </li>
+        <li style="--i:2; --clr: #01bdab">
+            <a href="#"><i class="fab fa-whatsapp "></i></a>
+        </li>    
+        <li style="--i:3; --clr: #ff2972">
+            <a href="#"><i class="fab fa-instagram"></i></a>
+        </li>
+        <li style="--i:4; --clr: #00b0fe">
+            <a href="#"><i class="fab fa-linkedin-in"></i></a>
+        </li>    
+        <li style="--i:5; --clr: #fea600">
+            <a href="https://www.google.com/"><i class="fab fa-google"></i></a>    
+        </li>
+    </div>
+    
+    <script src="{{url_for('static',filename='js/app.js') }}" defer></script>
+</body>
+
+
+
+</html>

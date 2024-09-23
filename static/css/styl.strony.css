@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+    
+    *{
+        box-sizing: border-box;
+    }
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        padding: 10px;
+        background: #0a0a0a
+    } 
+    /* Header/Blog nazwa */
+    .header {
+        padding: 20px;
+        text-align: center;
+        background: linear-gradient(to left, #ff00cc,aqua);
+        filter: drop-shadow(5px 5px 20px#ff00cc);
+        border: 3px solid;
+        border-image: linear-gradient(to right, rgb(255,110,199) 0%, rgba(157,80,187,1) 25%, rgba(106,0,128,1) 50%, rgba(27,108,168,1) 75%, rgba(0,212,255,1) 100%) 1;
+    }
+    .header h1 {
+        font-size: 50px;
+    }
+    /* Style the top navigation bar- to jest ten pasek czarny gdzie sie linki wkleja */
+    .topnav {
+        overflow: hidden;
+        background-color: #333;
+    }
+    /* Style the topnav links-wielkość i rodzaj tego jak będą wyglądać linki */
+    .topnav a {
+        float: left;
+        display: block;
+        color: aqua;
+        text-align: center;
+        padding: 14px 16px;
+        text-decoration: none;
+    }
+    /* Change color on hover-dosłownie zmiana koloru w topnavie */
+
+    .topnav a:hover {
+        background-color: #ddd;
+        color:black;
+    }
+    /* Create two unequal columns that floats next to each other- stworzenie dwóch osobnych kolumn w którym będzie tekst i zdjęcia */
+/* Left column */
+    .leftcolumn {
+        float: left;
+        width: 75%;
+    }
+    .rightcolumn {
+        float: right;
+        width: 25%;
+        padding-left: 20px;
+    }
+    .png1 {
+        background-color: grey;
+        width: 100%;
+        padding: 20px;
+    }
+    /* Add a card effect for articles- tworzenie efektu karty dla poszczególnych sekcji */
+    .card {
+        background-color: white;
+        padding: 20px;
+        margin-top: 20px;
+        
+    }
+    div.card {
+        filter: drop-shadow(5px 5px 20px #ff00cc);
+        border: 3px solid black;
+        border-image: linear-gradient(to right, rgb(255,110,199) 0%, rgba(157,80,187,1) 25%, rgba(106,0,128,1) 50%, rgba(27,108,168,1) 75%, rgba(0,212,255,1) 100%) 1;
+    }
+    /* Clear floats after the columns- usuwanie flota po kolumnach */
+    .row::after {
+        content: "";
+        display: table;
+        clear: both;
+    } 
+    /* Stopka czyli tak jak ma wyglądać */
+    .footer {
+        padding: 20px;
+        text-align: center;
+        background: #aaa;
+        margin-top: 20px;
+    }
+    div.footer {
+        background: linear-gradient(to left, #ff00cc, aqua);
+        filter: drop-shadow(1px 1px 10px #ff00cc);
+        border: solid 3px;
+        border-image: linear-gradient(to right, rgb(255,110,199) 0%, rgba(157,80,187,1) 25%, rgba(106,0,128,1) 50%, rgba(27,108,168,1) 75%, rgba(0,212,255,1) 100%) 1;;
+        
+    }
+
+
+    /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other 
+    Najprościej mówiąc dostosowanie zwijania strony jeśli monitor ma mniej niż 800px szerokości tak aby sie to nie rozjechało*/
+    @media screen and (max-width: 800px) {
+        .leftcolumn,.rightcolumn {
+            width: 100%;
+            padding: 0;
+        }
+    }/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other
+    i tutaj to samo dla 400px */
+@media screen and (max-width:400px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}

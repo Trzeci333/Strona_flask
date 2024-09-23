@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+    content="width=device-width, initial-scale=1.0">
+    <title>Synthwave-Powrót do przeszłości</title> 
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/ciekawostka.css') }}">
+    </head>
+    <body>
+        <div class="gradient-border">
+            <h1>"Synthwave jako Powrót do przeszłości"</h1>
+                <nav>
+                    <ul>
+                    <li><a href="{{ url_for('home') }}">Strona Główna</a></li>
+                    <li><a href="kontakt.html">Skontaktuj sie z nami</a></li>
+                    <li><a href="strona2.html">Menu Główne</a></li>
+                    </ul>
+                </nav>
+        </div>
+
+        <div id="content">
+            <p>Styl Synthwave został opracowany na początku lat 2000 i od tych lat zyskiwał na popularności sama geneza stylu opiera sie na neonowych i barwnych latach 80
+      dominuje tam kolorystka jaskrawych neonów w kolorze niebieskim fioletowym i różowym i ich odcieniami sam styl jest związany z muzyką elektroniczą
+      graną na syntezatorach, gitarach elektrycznych stylephonach i innego tego typu instrumentami sam styl łączy ze sobą elementy rockowe nostaligiczne
+      a nawet metalowe. Część ludzi w tym także ja eksperymentuje z tym stylem w formie projektu wnętrz w domach ja osobiście bardzo lubie łączyć ten styl z akcentami kosmicznymi.</p>
+            <div class="margines1">
+                <img src="{{ url_for('static', filename='images/touchpad.png') }}" width="180" height="150" alt="Launchpad"/>
+                <p><dfn>Launchpad</dfn> jest to instrument który można zaprogramować w taki sposób aby tworzyć konkretne dźwięki działa z głównymi edytorami dźwięku jak chociażby fl studio
+        wykorzystywany jest głównie do podbitek w piosenkach i tworzenia krótkich rytmicznych sampli przez swój kosmiczny wygląd bardzo fajnie wpisuje się w tematykę synthwaevu</p>
+             </div>
+            <div class="margines2">
+                <img src="{{ url_for('static', filename='images/boombox.png') }}" width="180" height="150" alt="Boombox"/>
+                <p>Boombox kto by go nie znał myśle że co jak co ale to urządzenie jest ikoną tego stylu jak i lat 80 zaraz obok kaset magnetofonowych
+                szczególnie pojawiały sie w teledyskach hiphopowych w latach 2006-2011 charkteryzują się świetnym wyglądem który aż emanuje historią, szczęsliwi ci którzy nie wyrzucili 
+                tych grajacyh pudełek na śmieci bo dzięki temu mogą nadać im nowe życie i wpasować je w tą stylistykę.</p>
+             </div>
+            <div class="margines3">
+                <img src="{{ url_for('static', filename='images/gitara.png') }}" width="180" height="150" alt="Gitara"/>
+                <p>Gitara elektryczna przepiękny instrument z jeszcze piękniejszym brzmieniem wykorzystywana w tylu gatunkach że nawet nie jestem w stanie wymienić
+            ich wszystkich natomiast to co warto powiedzieć to to że jest bardzo wykorzystywana w tego rodzaju muzyce i stanowi jeden z głównych członów tej subkultury.
+                </p>
+            </div>
+            <footer>&copy;2000-2024 synthstyle.pl</footer>
+        </div>
+    </body>
+</html>

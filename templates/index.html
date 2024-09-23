@@ -1,0 +1,59 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <meta charset="UTF-8" />
+    <title>SynthStyle.pl</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/styl.strony.css') }}">
+</head>
+    <body>
+        <div class="header">
+            <h1>Synthwave i Astronomia</h1>
+            <p>Czyli Powrót do przeszłości w nowoczesnym wydaniu</p>
+    </div>
+        <div class="topnav">
+            <a href="{{ url_for('page1') }}">Kącik Wiedzy</a>
+            <a href="{{ url_for('adnotacja') }}">Kontakt</a>
+            <a href="strona2.html">CV</a>   
+            <a href="{{ url_for('login') }}"style= "float:right">Zaloguj</a>
+    </div>
+        <div class="row">
+            <div class="leftcolumn">
+                <div class="card">
+                    <h2>Główny tekst</h2>
+                    <h5>jakieś krótkie pierdoły do napisania z datą 06.09.2024</h5>
+                    <div class="png1" style="height: 200px;">zdjęcie</div>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui eaque, sunt molestias nisi, quaerat eum consequatur dolore non magnam et minima laboriosam totam! Iusto quo nisi ea dignissimos eveniet quisquam?</p>
+                    <p> znowu jakiś szit</p>
+                    </div>
+                <div class="card">
+                    <h2>drugi główny tekst</h2>
+                    <h5>znowu data i tekst 16.11.2000</h5>
+                <div class="png1" style="height: 300px; width: 1050px;"><img src="{{ url_for('static', filename='images/kosmos2.jpg') }}" alt="space" width="100%" height="100%"></div>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores ea quod illo enim sunt cumque cum nobis cupiditate pariatur, voluptatibus delectus iure dolorum vel veniam exercitationem aperiam saepe esse harum.</p>
+                    <p>jakby za mało tekstu było</p>
+                </div>
+               </div>         
+              <div class="rightcolumn">
+                <div class="card">
+                    <h2>O mnie</h2>
+                    <div class="png1" style="height: 100px;">imageeeee</div>
+                    <p>mea culpa co tu napisać nie wiem</p>
+                </div>
+                <div class="card">
+                    <h3>popularne zdjęcia które chce wrzucić</h3>
+                    <div class="png1"><p>zdjecie</p></div>
+                    <div class="png1"><p>zdjecie</p></div>
+                    <div class="png1"><p>zdjęcie</p></div>
+                </div>
+                <div class="card">
+                    <h3>Tu wpisujemy sociale albo inne takie</h3>
+                    <p>o tu własnie</p>
+                </div>
+            </div>
+        </div>
+        <div class="footer">
+            <h2>Stopka tutaj można dać telefon i maila do kogoś</h2>    
+			<footer>&copy;SynthStyle.pl Wszystkie prawa zastrzeżone</footer>
+        </div>
+</body>
+</html>
